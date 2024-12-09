@@ -718,21 +718,17 @@ h3 {
   list-style-type: none;
   padding: 0;
 }
-
 .footer-content ul li {
   display:inline-block;
   margin: 15px 10px;
 }
-
 .footer-content ul li a {
   color: #ffcc00; /* Example color */
   text-decoration: none;
 }
-
 .footer-content ul li a:hover {
   text-decoration: underline; /* Optional: underline on hover */
 }
-
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .footer-content ul li {
@@ -760,12 +756,10 @@ h2 {
   width: 100%; /* Take full width */
   max-width: 400px; /* Limit maximum width */
 }
-
 label {
   margin-bottom: 5px; /* Space between label and input */
   font-weight: bold; /* Bold label for better visibility */
 }
-
 input {
   width: 100%; /* Full width input */
   padding: 10px; /* Padding inside the input */
@@ -778,7 +772,90 @@ input:focus {
   border-color: #007bff; /* Change border color on focus */
   outline: none; /* Remove outline */
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px); /* 2 cards per row */
+  }
+}
 
+@media (max-width: 480px) {
+  .product-card {
+    width: calc(100% - 20px); /* 1 card per row */
+  }
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .category-box {
+    width: calc(50% - 20px); /* 2 boxes per row */
+  }
+
+  .image-container {
+    width: calc(100% - 10px); /* 1 image per row */
+  }
+}
+@media (max-width: 480px) {
+  .category-box {
+    width: calc(100% - 20px); /* 1 box per row */
+  }
+}
+.categories-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Center align headings */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between category boxes */
+  justify-content: center; /* Center the category boxes */
+}
+
+.category-box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: calc(25% - 20px); /* 4 boxes per row */
+  min-width: 220px; /* Minimum width for category box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* For overlay positioning */
+  overflow: hidden; /* To contain overlay styling */
+  transition: transform 0.3s; /* Subtle hover effect */
+}
+
+.category-box:hover {
+  transform: translateY(-5px); /* Lift up on hover */
+}
+
+.category-images {
+  display:grid;
+  flex-wrap: wrap; /* Allow images to wrap */
+  gap: 10px; /* Space between images */
+  justify-content: center; /* Center images in the box */
+}
+
+.image-container {
+  position: relative; /* For overlay positioning */
+  width: calc(35% - 10px); /* 2 images per row */
+  overflow: hidden; /* Prevent overflow */
+  border-radius: 8px;
+  height:100px;
+  width: 80px; /* Round corners */
+}
+
+.rounded-image {
+  width: 100%;
+  height:auto; /* Maintain aspect ratio */
+  display:inline-block; /* Remove bottom space */
+}
 .login-button {
   width: 100%; /* Full width button */
   padding: 10px; /* Padding inside the button */

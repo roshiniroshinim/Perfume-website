@@ -150,6 +150,7 @@ const Homes = () => {
                 className="buy-button"
                 onClick={() => addToCart(image.src, `Product ${index + 1}`, image.stars, image.price)}
               >
+
                 Add to Cart
               </button>
             </div>
