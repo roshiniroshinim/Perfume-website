@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Perfume-website/static/css/main.676f6929.css",
+    "main.js": "/Perfume-website/static/js/main.702b36ba.js",
+    "static/media/fa-solid-900.ttf": "/Perfume-website/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
+    "static/media/fa-brands-400.ttf": "/Perfume-website/static/media/fa-brands-400.26b80c8830bebf340211.ttf",
+    "static/media/fa-solid-900.woff2": "/Perfume-website/static/media/fa-solid-900.83a538a018a9e44b023a.woff2",
+    "static/media/fa-brands-400.woff2": "/Perfume-website/static/media/fa-brands-400.fdbb558523a380307689.woff2",
+    "static/media/fa-regular-400.ttf": "/Perfume-website/static/media/fa-regular-400.05fdd87be89f7f8f0a1e.ttf",
+    "static/media/review.jpg": "/Perfume-website/static/media/review.1ef1ecba9db4ad9c12c8.jpg",
+    "static/media/img1.jpg": "/Perfume-website/static/media/img1.c6dc36f06e0e52ca8705.jpg",
+    "static/media/fa-regular-400.woff2": "/Perfume-website/static/media/fa-regular-400.4f6a2dabee9c092d09b9.woff2",
+    "static/media/p8.jpg": "/Perfume-website/static/media/p8.a7e8930250ebe8a94e47.jpg",
+    "static/media/p11.jpg": "/Perfume-website/static/media/p11.958a9e1e0a00d14e7f49.jpg",
+    "static/media/p5.jpg": "/Perfume-website/static/media/p5.4cf25f8a10f8e43ed1d5.jpg",
+    "static/media/img3.jpg": "/Perfume-website/static/media/img3.80c777563fb11081b909.jpg",
+    "static/media/img2.jpg": "/Perfume-website/static/media/img2.f188aa3f5ccecf1be3f5.jpg",
+    "static/media/p12.jpg": "/Perfume-website/static/media/p12.e616f725f419510b157d.jpg",
+    "static/media/about-image.jpg": "/Perfume-website/static/media/about-image.2d4bb5e16ded3b026956.jpg",
+    "static/media/p4.jpg": "/Perfume-website/static/media/p4.b3bb823178502850fc0d.jpg",
+    "static/media/fa-v4compatibility.ttf": "/Perfume-website/static/media/fa-v4compatibility.fa86b3c85e77abbd2ebd.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Perfume-website/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
+    "index.html": "/Perfume-website/index.html",
+    "main.676f6929.css.map": "/Perfume-website/static/css/main.676f6929.css.map",
+    "main.702b36ba.js.map": "/Perfume-website/static/js/main.702b36ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.676f6929.css",
+    "static/js/main.702b36ba.js"
+  ]
+}
