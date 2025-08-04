@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Perfume-website/static/css/main.676f6929.css",
-    "main.js": "/Perfume-website/static/js/main.702b36ba.js",
+    "main.js": "/Perfume-website/static/js/main.bfc0e498.js",
     "static/media/fa-solid-900.ttf": "/Perfume-website/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
     "static/media/fa-brands-400.ttf": "/Perfume-website/static/media/fa-brands-400.26b80c8830bebf340211.ttf",
     "static/media/fa-solid-900.woff2": "/Perfume-website/static/media/fa-solid-900.83a538a018a9e44b023a.woff2",
@@ -22,10 +22,10 @@
     "static/media/fa-v4compatibility.woff2": "/Perfume-website/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/Perfume-website/index.html",
     "main.676f6929.css.map": "/Perfume-website/static/css/main.676f6929.css.map",
-    "main.702b36ba.js.map": "/Perfume-website/static/js/main.702b36ba.js.map"
+    "main.bfc0e498.js.map": "/Perfume-website/static/js/main.bfc0e498.js.map"
   },
   "entrypoints": [
     "static/css/main.676f6929.css",
-    "static/js/main.702b36ba.js"
+    "static/js/main.bfc0e498.js"
   ]
 }
