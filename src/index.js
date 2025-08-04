@@ -13,7 +13,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 export default function App()
 {
   return(
-   <BrowserRouter>
+   <BrowserRouter basename="Perfume-website">
     <Routes>
       <Route path="/" element={<Layouts />}>
         <Route index element={<Home />} />
