@@ -81,11 +81,13 @@ const Layouts = () => {
     setShowModal(false);
   };
 
+  console.log(cartItems.length)
   // Calculate cart count and total price
-  const cartCount = cartItems.reduce(
-    (total, item) => total + (item.quantity || 0),
-    0
-  );
+  // const cartCount = cartItems.reduce(
+  //   (total, item) => total + (item.quantity || 0),
+  //   0
+  // );
+  const cartCount = cartItems.length;
   const totalPrice = cartItems.reduce(
     (total, item) => total + (item.price * (item.quantity || 1)),
     0

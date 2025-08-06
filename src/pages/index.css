@@ -1,4 +1,8 @@
-
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 .login-container {
   display: flex;
   flex-direction: column;
@@ -291,7 +295,7 @@ input[type="password"]:focus {
 }
 .about-image {
   flex: 1; /* Image takes up space */
-  text-align: right; /* Right align the text */
+  text-align: center; /* Right align the text  ??? bala chenga*/ 
 }
 
 .about-image img {
@@ -456,7 +460,11 @@ width: 360px;
 .order-form {
   display: flex;
   flex-direction: column;
-  max-width: 300px; 
+  /* max-width: 300px;  */
+  width: 100%;
+  box-shadow: none;
+  /* background-color: #0056b3;
+  border: 2px solid black; */
 }
 
 .form-group {
@@ -520,7 +528,8 @@ input, select {
   flex-wrap: wrap;
   gap: 40px;
   position: relative;
-  left: 80px; /* Adjust as needed */
+  /* left: 80px; Adjust as needed */
+  justify-content: center;
 }
 
 .perfume-item {
@@ -1465,4 +1474,48 @@ button {
 }
 .social-media a:hover {
   color:white; 
+}
+
+.horizontal-gallery-container1 {
+  padding: 20px;
+}
+
+.horizontal-scroll-gallery1 {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+/* .horizontal-scroll-gallery1::-webkit-scrollbar {
+  height: 6px;
+} */
+
+.horizontal-scroll-gallery::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.image-box1 {
+  flex: 0 0 auto;
+  width: 200px;
+  min-height: 180px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.gallery-image1 {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .image-box1 {
+    width: 140px;
+  }
 }

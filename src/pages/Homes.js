@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate, useOutletContext } from 'react-router-dom'; 
 import Navbar from './Navbar'; 
 import p8 from './image2/p8.jpg';
 import p12 from './image2/p12.jpg';
@@ -31,14 +31,15 @@ const Homes = () => {
   const [form, setForm] = useState({ name: '', email: '', product: '' });
   const [selectedProduct, setSelectedProduct] = useState(null);
   const navigate = useNavigate();
+  const { addToCart }= useOutletContext();
 
   const images = [
-    { src: img7, stars: 4, price: 250 },
-    { src: img6, stars: 5, price: 200 },
-    { src: images6, stars: 3, price: 420 },
-    { src: images5, stars: 5, price: 310 },
-    { src: img5, stars: 4, price: 350 },
-    { src: image9, stars: 5, price: 400 },
+    { id: 1, src: img7, name: 'Classic Perfume', stars: 4, price: 250 },
+        { id: 2, src: img6, name: 'Elegant Scent', stars: 5, price: 200 },
+        { id: 3, src: images6, name: 'Luxury Fragrance', stars: 3, price: 420 },
+        { id: 4, src: images5, name: 'Modern Essence', stars:5 , price: 310 },
+        { id: 5, src: img5, name: 'Delicate Aroma', stars: 4 , price: 350 },
+        { id: 6, src: image9, name: 'Premium Blend', stars: 5, price: 400 },
   ];
 
   const productCategories = [
@@ -56,7 +57,7 @@ const Homes = () => {
     { src: img7, name: 'Perfume 6', properties: 'Floral, Elegant' },
   ];
 
-  const addToCart = (image, name, rating, price) => {
+  const addToCart1 = (image, name, rating, price) => {
     const newItem = { image, name, rating, price };
     setCartItems(prevItems => [...prevItems, newItem]);
     alert(`${name} has been added to your cart!`);
@@ -82,7 +83,7 @@ const Homes = () => {
     setSelectedProduct(null);
   };
 
-  const imageGallery = [images4, images5, images6, images1, images2];
+  const imageGallery = [images4, images5, images6, images1, images2, images4, images5, images6, images1, images2];
 
   return (
     <div>
@@ -244,7 +245,7 @@ const Homes = () => {
                 <div className="icon">
                   <FaInfoCircle title="View Properties" />
                 </div>
-                <div className="icon" onClick={() => addToCart(item.src, item.name, 5, 100)}>
+                <div className="icon" onClick={() => addToCart1(item.src, item.name, 5, 100)}>
                   <FaShoppingCart title="Add to Cart" />
                 </div>
                 <p className="properties">{item.properties}</p>
@@ -315,12 +316,12 @@ const Homes = () => {
       </div>
 
     {/* Image Gallery */}
-    <div className="container">
+    <div className="container1 horizontal-gallery-container1">
         <h2>Image Gallery</h2>
-        <div className="image-gallery">
+        <div className="image-gallery1 horizontal-scroll-gallery1">
           {imageGallery.map((src, index) => (
-            <div className="image-box" key={index}>
-              <img src={src} alt={`Gallery Image ${index + 1}`} className="gallery-image" />
+            <div className="image-box1" key={index}>
+              <img src={src} alt={`Gallery Image ${index + 1}`} className="gallery-image1" />
             </div>
           ))}
         </div>
